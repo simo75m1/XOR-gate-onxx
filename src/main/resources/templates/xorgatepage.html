@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XOR Gate</title>
+</head>
+<body>
+    <h1>Input numbers here</h1>
+    <form action="/sendxor" method="post">
+        <input placeholder="First number" type="number" name="firstNumber">
+        <input placeholder="Second number" type="number" name="secondNumber">
+        <button type="submit">Send data</button>
+    </form>
+
+    <p>Result: <span th:text="${session.xorresult}"> </span></p> <!-- Add some thymeleaf data inside span-->
+</body>
+</html>
